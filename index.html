@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="contador.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
 </head>
 <body>
@@ -42,9 +44,34 @@
             </div>  
         </div>
     </div>
+    <div class="body2">
+    <div class="placa1">
+        <p class="titulo">O</p>
+        <p class="contar" id="contar"><span id="PL1"  class="material-icons-round">remove</span></p></div>
+    <div class="contenedor">
+        <div class="botones">
+            <button class="incr" id="incr"><span class="material-icons-round">add</span></button>
+            <button class="decr" id="decr"><span class="material-icons-round">remove</span></button>
+            <button class="reset" id="reset"><span class="material-icons-round">cached</span></button>
+        </div>
+       </div> 
+    </div>
+       <div class="placa2">
+        <p class="titulo2">X</p>
+        <p class="contar2" id="contar2"><span id="PL2" class="material-icons-round">remove</span></p></div>
+    <div class="contenedor2">
+        <div class="botones2">
+            <button class="incr" id="incr2"><span class="material-icons-round">add</span></button>
+            <button class="decr" id="decr2"><span class="material-icons-round">remove</span></button>
+            <button class="reset" id="reset2"><span class="material-icons-round">cached</span></button>
+
+        </div>
+       </div> 
+    </div>
+</div>
     <script src="Javascript/game.js"></script>
     <script src="Javascript/interface.js"></script>
     <script src="Javascript/canvas.js"></script>
-
+    <script src="Javascript/contador.js"></script>
 </body>  
 </html>
