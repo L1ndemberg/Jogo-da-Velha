@@ -47,9 +47,18 @@ restar2.addEventListener("click", ()=>{
 
 });
 
-reset.addEventListener("click", ()=>{
-    numero = 0;
-    contador.innerHTML = numero;
+reset2.addEventListener("click", ()=>{
+    numero2 = 0;
+    contador2.innerHTML = numero2;
 });
+
+const botao = document.getElementById("btnClique")
+
+// botao.addEventListener("click", fnSoma)
+
+// function fnSoma(){
+//     return
+
+// }
 
 
