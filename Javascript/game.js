@@ -1,8 +1,25 @@
 // Variáveis
-let board = ['','','','','','','','','']
+let board = ["","","","","","","","",""];
 let playerTime = 0;
 let symbol = ['o', 'x']
 let gameOver = false;
+
+
+let button_reset = document.getElementById("botaoR");
+    // adicionou um evento click
+button_reset.addEventListener("click", function () {
+    // reseto os valores do game
+    board = ["","","","","","","","",""];
+    playerTime = 0;
+    gameOver = false;
+    // pego todos os squares do jogo no html
+    let squares = document.querySelectorAll(".square");
+
+    for (let i = 0; i < squares.length; i++) {
+    // altero o innerHTML para vazio removendo todos os conteúdos 
+        squares[i].innerHTML = "";
+    }
+});
 
 function handleMove(position) {
 

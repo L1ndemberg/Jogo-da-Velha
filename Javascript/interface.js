@@ -12,7 +12,15 @@ function handleClick(event) {
     let postion = square.id;
 
      if (handleMove(postion)) {
-    
+        // no momento que entrar aqui deu gameOver
+        // é verificado qual jogar ganhou e alterado no placar
+        if (playerTime == 0) {
+            numero++;
+            contador.innerHTML = numero;
+        } else {
+            numero2++;
+            contador2.innerHTML = numero2;
+        }
       setTimeout(() => {
          alert ("O Jogo Acabou - O Vencedor foi " + playerTime);
         }, 20);
